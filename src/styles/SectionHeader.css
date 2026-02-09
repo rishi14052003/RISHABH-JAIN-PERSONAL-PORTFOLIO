@@ -1,0 +1,198 @@
+/* ===================================
+   SECTION HEADER COMPONENT STYLES
+   =================================== */
+
+.section-header {
+  margin-bottom: var(--space-12);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--transition-slow);
+}
+
+.section-header--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Alignment Variants */
+.section-header--left {
+  text-align: left;
+}
+
+.section-header--center {
+  text-align: center;
+}
+
+.section-header--right {
+  text-align: right;
+}
+
+/* Title Styles */
+.section-header__title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-4);
+  position: relative;
+  display: inline-block;
+}
+
+.section-header--left .section-header__title {
+  display: block;
+}
+
+.section-header--right .section-header__title {
+  display: block;
+}
+
+/* Gradient Title */
+.section-header__title--gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated Underline */
+.section-header__title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.section-header--left .section-header__title::after {
+  left: 0;
+}
+
+.section-header--center .section-header__title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-header--right .section-header__title::after {
+  left: auto;
+  right: 0;
+}
+
+.section-header--visible .section-header__title::after {
+  width: 60px;
+}
+
+.section-header--center .section-header--visible .section-header__title::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Subtitle Styles */
+.section-header__subtitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+  margin: 0;
+  max-width: 600px;
+}
+
+.section-header--left .section-header__subtitle {
+  text-align: left;
+  margin-left: 0;
+}
+
+.section-header--center .section-header__subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header--right .section-header__subtitle {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+  
+  .section-header__title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-3);
+  }
+  
+  .section-header__subtitle {
+    font-size: var(--font-size-base);
+  }
+  
+  .section-header--visible .section-header__title::after {
+    width: 40px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section-header__title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .section-header__subtitle {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Animation Delays for Multiple Headers */
+.section-header:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.section-header:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.section-header:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+/* Hover Effects */
+.section-header__title:hover {
+  color: var(--color-primary);
+}
+
+.section-header__title--gradient:hover {
+  background: linear-gradient(135deg, var(--color-primary-hover), var(--color-accent-hover));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .section-header {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  
+  .section-header__title::after {
+    transition: none;
+    width: 60px;
+  }
+  
+  .section-header--center .section-header__title::after {
+    transform: translateX(-50%);
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .section-header__title::after {
+    height: 4px;
+    background-color: var(--color-primary);
+  }
+}
