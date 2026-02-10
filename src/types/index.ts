@@ -35,7 +35,7 @@ export interface Skill {
   name: string;
   category: string;
   proficiency: number; // 1-100
-  icon?: string;
+  icon?: string | React.ReactNode;
   yearsOfExperience?: number;
   projectsUsed?: string[];
 }

@@ -9,7 +9,8 @@ import {
   Server as NodejsIcon, 
   Database, 
   Flame as Fire,
-  Code as Code2 
+  Code as Code2,
+  Bot as N8nIcon
 } from 'lucide-react';
 import '../styles/Summary.css';
 
@@ -39,9 +40,10 @@ const Summary: React.FC = () => {
   const featuredSkills = [
     { name: 'React.js', icon: <ReactIcon size={32} /> },
     { name: 'Node.js', icon: <NodejsIcon size={32} /> },
-    { name: 'Express.js', icon: <Code2 size={32} /> },
+    { name: 'Python', icon: <Code2 size={32} /> },
     { name: 'MongoDB', icon: <Database size={32} /> },
-    { name: 'MERN Stack', icon: <Fire size={32} /> },
+    { name: 'n8n', icon: <Fire size={32} /> },
+    { name: 'AWS', icon: <N8nIcon size={32} /> },
   ];
 
   return (
@@ -62,9 +64,7 @@ const Summary: React.FC = () => {
           </div>
 
           <p className="summary__hero-description">
-            6 months at iGeek building scalable MERN applications with expertise in
-            machine learning and cloud technologies. Passionate about creating innovative
-            solutions that make a difference.
+            Results-driven Full Stack Developer and Automation Specialist with expertise in React.js, Node.js, and Python, delivering scalable web applications and AI-powered solutions. Proven track record in building financial tools, including automated trading bots and high-efficiency workflow pipelines using n8n and Airtable.
           </p>
 
           <div className="summary__hero-actions">
@@ -81,10 +81,7 @@ const Summary: React.FC = () => {
               variant="outline"
               size="large"
               onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/resume.pdf';
-                link.download = 'Rishabh_Jain_Resume.pdf';
-                link.click();
+                window.open('https://drive.google.com/file/d/1Q5pw6dOg887IEsOvPfUNx4u8zXYrUtzB/view?usp=sharing', '_blank');
               }}
             >
               Download Resume

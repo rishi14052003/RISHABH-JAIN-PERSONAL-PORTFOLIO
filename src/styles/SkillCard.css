@@ -6,7 +6,7 @@
   background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
+  padding: var(--space-4);
   transition: all var(--transition-normal);
   opacity: 0;
   transform: translateY(30px);
@@ -17,6 +17,7 @@
   align-items: center;
   text-align: center;
   height: 100%;
+  max-width: 280px;
 }
 
 .skill-card--visible {
@@ -89,6 +90,16 @@
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius-full);
+}
+
+.skill-card__icon-react {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  filter: brightness(0) invert(1);
 }
 
 .skill-card__proficiency {

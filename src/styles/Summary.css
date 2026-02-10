@@ -14,7 +14,7 @@
   overflow: hidden;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   color: var(--color-white);
-  padding: var(--spacing-8) 0;
+  padding: var(--space-8) 0;
 }
 
 .summary__hero-content {
@@ -23,13 +23,13 @@
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 var(--spacing-6);
+  padding: 0 var(--space-6);
 }
 
 .summary__hero-title {
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--space-6);
   color: var(--color-white);
   line-height: 1.2;
 }
@@ -41,7 +41,7 @@
 
 .summary__hero-role {
   font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--space-8);
   color: var(--color-white);
   line-height: 1.4;
 }
@@ -68,7 +68,7 @@
 .summary__hero-description {
   font-size: var(--font-size-lg);
   max-width: 600px;
-  margin: 0 auto var(--spacing-10);
+  margin: 0 auto var(--space-10);
   line-height: 1.7;
   color: var(--color-white);
   opacity: 0.9;
@@ -76,7 +76,7 @@
 
 .summary__hero-actions {
   display: flex;
-  gap: var(--spacing-8);
+  gap: var(--space-16);
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: var(--spacing-4);
@@ -150,21 +150,21 @@
 
 /* Stats Section */
 .summary__stats {
-  padding: var(--spacing-16) 0;
+  padding: var(--space-16) 0;
   background: var(--color-background);
 }
 
 .summary__stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--spacing-8);
+  gap: var(--space-8);
   max-width: 800px;
   margin: 0 auto;
 }
 
 .summary__stat-item {
   text-align: center;
-  padding: var(--spacing-6);
+  padding: var(--space-6);
   border-radius: var(--border-radius-lg);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -180,7 +180,7 @@
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--space-2);
 }
 
 .summary__stat-label {
@@ -192,23 +192,23 @@
 
 /* Skills Section */
 .summary__skills {
-  padding: var(--spacing-20) 0;
+  padding: var(--space-32) 0;
 }
 
 .summary__skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: var(--spacing-8);
+  gap: var(--space-8);
   max-width: 1000px;
-  margin: 0 auto var(--spacing-10);
-  padding: var(--spacing-4);
+  margin: 0 auto var(--space-16);
+  padding: var(--space-4);
 }
 
 .summary__skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--spacing-6);
+  padding: var(--space-6);
   border-radius: var(--border-radius-md);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -242,12 +242,12 @@
 
 .summary__skills-actions {
   text-align: center;
-  margin-top: var(--spacing-20);
+  margin-top: var(--space-24);
 }
 
 /* CTA Section */
 .summary__cta {
-  padding: var(--spacing-20) 0;
+  padding: var(--space-20) 0;
   background: var(--color-background);
 }
 
@@ -255,27 +255,27 @@
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 var(--spacing-6);
+  padding: 0 var(--space-6);
 }
 
 .summary__cta-title {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--space-6);
   color: var(--color-text-primary);
   line-height: 1.3;
 }
 
 .summary__cta-description {
   font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-10);
+  margin-bottom: var(--space-10);
   color: var(--color-text-secondary);
   line-height: 1.7;
 }
 
 .summary__cta-actions {
   display: flex;
-  gap: var(--spacing-6);
+  gap: var(--space-6);
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -285,7 +285,7 @@
   text-decoration: none;
   font-size: var(--font-size-base);
   transition: color var(--transition-normal);
-  margin-top: var(--spacing-4);
+  margin-top: var(--space-4);
   display: block;
 }
 
@@ -336,17 +336,17 @@
   
   .summary__hero-description {
     font-size: var(--font-size-base);
-    margin: 0 auto var(--spacing-6);
+    margin: 0 auto var(--space-6);
   }
   
   .summary__stats-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--spacing-6);
+    gap: var(--space-6);
   }
   
   .summary__skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: var(--spacing-4);
+    gap: var(--space-4);
   }
   
   .summary__cta-actions {
@@ -366,6 +366,6 @@
   }
   
   .summary__skills-grid {
-    grid-template-columns: repeat(2, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }

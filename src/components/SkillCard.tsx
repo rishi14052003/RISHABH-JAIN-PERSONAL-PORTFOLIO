@@ -76,7 +76,13 @@ export const SkillCard: React.FC<SkillCardProps> = ({
           ) : null}
           <div className="skill-card__icon">
             {skill.icon ? (
-              <img src={skill.icon} alt={skill.name} />
+              typeof skill.icon === 'string' ? (
+                <img src={skill.icon} alt={skill.name} />
+              ) : (
+                <div className="skill-card__icon-react">
+                  {skill.icon}
+                </div>
+              )
             ) : (
               <span>{iconContent}</span>
             )}
