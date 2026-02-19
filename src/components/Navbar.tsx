@@ -24,19 +24,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const navigationItems = [
     { name: 'Home', path: '/', label: 'Navigate to home section' },
-    { name: 'Skills', path: '/#skills', label: 'Jump to skills section' },
-    { name: 'Experience', path: '/#experience', label: 'Jump to experience section' },
-    { name: 'Projects', path: '/#projects', label: 'Jump to projects section' },
-    { name: 'Publications', path: '/#publications', label: 'Jump to publications section' },
+    { name: 'Skills', path: '/skills', label: 'Go to Skills page' },
+    { name: 'Experience', path: '/experience', label: 'Go to Experience page' },
+    { name: 'Projects', path: '/projects', label: 'Go to Projects page' },
+    { name: 'Publications', path: '/publications', label: 'Go to Publications page' },
   ];
 
   const isActiveLink = (path: string) => {
-    if (path === '/') {
-      return currentRoute === '/' && !currentHash;
-    }
-    if (path.startsWith('/#')) {
-      return currentRoute === '/' && currentHash === path.replace('/', '');
-    }
     return currentRoute === path;
   };
 

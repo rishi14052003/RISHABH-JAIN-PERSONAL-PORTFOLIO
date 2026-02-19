@@ -71,9 +71,7 @@ const Summary: React.FC = () => {
             <Button
               variant="primary"
               size="large"
-              onClick={() =>
-                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
-              }
+              onClick={() => window.location.assign('/projects')}
             >
               View Projects
             </Button>
