@@ -29,11 +29,10 @@ export const Footer: React.FC<FooterProps> = ({
 }) => {
   const navigationItems = [
     { name: 'Home', path: '/' },
-    { name: 'Skills', path: '/skills' },
-    { name: 'Experience', path: '/experience' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Publications', path: '/publications' },
-    { name: 'Education', path: '/education' },
+    { name: 'Skills', path: '/#skills' },
+    { name: 'Experience', path: '/#experience' },
+    { name: 'Projects', path: '/#projects' },
+    { name: 'Publications', path: '/#publications' },
   ];
 
   const SocialIcon = ({ platform }: { platform: SocialLink['platform'] }) => {

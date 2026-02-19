@@ -17,9 +17,9 @@ import '../styles/Summary.css';
 const Summary: React.FC = () => {
   const { text: currentRole } = useTypewriter({
     strings: [
+      'MERN Stack Developer',
       'Full Stack Developer',
-      'ML Engineer',
-      'AWS Certified Professional'
+      'Automation Engineer (n8n, Airtable)'
     ],
     typingSpeed: 100,
     deletingSpeed: 50,
@@ -143,7 +143,7 @@ const Summary: React.FC = () => {
             </p>
             <div className="summary__cta-actions">
               <a
-                href="mailto:rishabh.jain@example.com"
+                href="mailto:siddh2606@gmail.com"
                 className="summary__cta-email"
               >
                 siddh2606@gmail.com

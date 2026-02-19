@@ -288,11 +288,11 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <main id="skills" className="skills">
+    <section id="skills" className="skills scroll-section" aria-label="Skills">
       <div className="container">
         <SectionHeader
           title="Technical Skills"
-          subtitle="Comprehensive expertise across full-stack development, machine learning, and automation"
+          subtitle="Automation & Low-Code, Full-Stack Development, DevOps & Deployment, Machine Learning, NLP, Cloud, and Core CS"
           align="center"
           gradient
         />
@@ -314,7 +314,7 @@ const Skills: React.FC = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

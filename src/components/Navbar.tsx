@@ -20,15 +20,25 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isScrolled, setIsScrolled] = useState(false);
 
   const currentRoute = currentPath || location.pathname;
+  const currentHash = location.hash;
 
   const navigationItems = [
-    { name: 'Home', path: '/', label: 'Navigate to home page' },
-    { name: 'Skills', path: '/skills', label: 'View skills and technologies' },
-    { name: 'Experience', path: '/experience', label: 'View work experience' },
-    { name: 'Projects', path: '/projects', label: 'View portfolio projects' },
-    { name: 'Publications', path: '/publications', label: 'View research publications' },
-    { name: 'Education', path: '/education', label: 'View education background' },
+    { name: 'Home', path: '/', label: 'Navigate to home section' },
+    { name: 'Skills', path: '/#skills', label: 'Jump to skills section' },
+    { name: 'Experience', path: '/#experience', label: 'Jump to experience section' },
+    { name: 'Projects', path: '/#projects', label: 'Jump to projects section' },
+    { name: 'Publications', path: '/#publications', label: 'Jump to publications section' },
   ];
+
+  const isActiveLink = (path: string) => {
+    if (path === '/') {
+      return currentRoute === '/' && !currentHash;
+    }
+    if (path.startsWith('/#')) {
+      return currentRoute === '/' && currentHash === path.replace('/', '');
+    }
+    return currentRoute === path;
+  };
 
   // Handle scroll effect
   useEffect(() => {
@@ -165,9 +175,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <li key={item.path}>
                       <Link
                         to={item.path}
-                        className={`navbar__link ${currentRoute === item.path ? 'navbar__link--active' : ''}`}
+                        className={`navbar__link ${isActiveLink(item.path) ? 'navbar__link--active' : ''}`}
                         aria-label={item.label}
-                        aria-current={currentRoute === item.path ? 'page' : undefined}
+                        aria-current={isActiveLink(item.path) ? 'page' : undefined}
                         onClick={() => handleNavigate(item.path)}
                       >
                         {item.name}
@@ -220,9 +230,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <li key={item.path}>
                     <Link
                       to={item.path}
-                      className={`navbar__mobile-link ${currentRoute === item.path ? 'navbar__mobile-link--active' : ''}`}
+                      className={`navbar__mobile-link ${isActiveLink(item.path) ? 'navbar__mobile-link--active' : ''}`}
                       aria-label={item.label}
-                      aria-current={currentRoute === item.path ? 'page' : undefined}
+                      aria-current={isActiveLink(item.path) ? 'page' : undefined}
                       onClick={() => handleNavigate(item.path)}
                     >
                       {item.name}

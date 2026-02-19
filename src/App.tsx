@@ -1,13 +1,13 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Summary from './pages/summary';
+import ScrollToHash from './components/ScrollToHash';
+import Home from './pages/home';
 import Skills from './pages/skills';
 import Experience from './pages/experience';
 import Projects from './pages/projects';
 import Publications from './pages/publications';
-import Education from './pages/education';
 import Contact from './pages/Contact';
 import './design/style.css';
 
@@ -18,27 +18,25 @@ import './design/style.css';
 const App: React.FC = () => {
   
   return (
-    <StrictMode>
-      <BrowserRouter>
-        <div className="app">
-          <Navbar />
-            
-          <main>
-            <Routes>
-              <Route path="/" element={<Summary />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/experience" element={<Experience />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/publications" element={<Publications />} />
-              <Route path="/education" element={<Education />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </main>
-            
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </StrictMode>
+    <BrowserRouter>
+      <ScrollToHash />
+      <div className="app">
+        <Navbar />
+          
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/publications" element={<Publications />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+          
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 

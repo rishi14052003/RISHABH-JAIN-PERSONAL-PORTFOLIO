@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <main id="projects" className="projects">
+    <section id="projects" className="projects scroll-section" aria-label="Projects">
       <div className="container">
         <SectionHeader
           title="Featured Projects"
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
           ))}
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

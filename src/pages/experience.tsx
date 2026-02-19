@@ -1,11 +1,21 @@
 import React from 'react';
+import SectionHeader from '../components/SectionHeader';
 
 const Experience: React.FC = () => {
   return (
-    <div>
-      <h1>Experience Page</h1>
-      <p>Experience page content coming soon...</p>
-    </div>
+    <section id="experience" className="scroll-section" aria-label="Experience">
+      <div className="container">
+        <SectionHeader
+          title="Experience"
+          subtitle="Roles and impact"
+          align="center"
+          gradient
+        />
+        <p className="text-secondary text-center">
+          Experience content coming soon...
+        </p>
+      </div>
+    </section>
   );
 };
 
