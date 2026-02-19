@@ -99,7 +99,6 @@ export const SkillCard: React.FC<SkillCardProps> = ({
       {/* Skill Info */}
       <div className="skill-card__content">
         <h3 className="skill-card__name">{skill.name}</h3>
-        <span className="skill-card__category">{skill.category}</span>
         
         {skill.yearsOfExperience && (
           <div className="skill-card__experience">
