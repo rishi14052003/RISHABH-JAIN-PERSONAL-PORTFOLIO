@@ -38,12 +38,19 @@
 
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-8);
   margin-bottom: var(--space-12);
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
 @media (max-width: 768px) {
   .projects {
     padding: var(--space-16) 0;
@@ -70,6 +77,7 @@
   }
   
   .projects__grid {
+    grid-template-columns: 1fr;
     gap: var(--space-4);
   }
 }

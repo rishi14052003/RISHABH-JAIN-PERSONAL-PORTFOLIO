@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import Button from './Button';
+import { Github, ExternalLink } from 'lucide-react';
 import type { ProjectCardProps } from '../types';
 import '../styles/ProjectCard.css';
 
@@ -95,24 +95,70 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         {/* Action Buttons */}
         <div className="project-card__actions">
           {project.githubLink && (
-            <Button
-              variant="outline"
-              size="small"
-              onClick={() => window.open(project.githubLink, '_blank')}
-              ariaLabel={`View ${project.title} source code on GitHub`}
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.6rem 1.2rem',
+                backgroundColor: 'var(--color-primary)',
+                color: 'var(--color-text-inverse)',
+                textDecoration: 'none',
+                borderRadius: '8px',
+                fontWeight: '600',
+                fontSize: '0.9rem',
+                transition: 'all 0.3s ease',
+                border: '2px solid var(--color-primary)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = 'var(--color-primary)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--color-primary)';
+                e.currentTarget.style.color = 'var(--color-text-inverse)';
+              }}
+              aria-label={`View ${project.title} source code on GitHub`}
             >
+              <Github size={18} />
               View Code
-            </Button>
+            </a>
           )}
           {project.liveLink && (
-            <Button
-              variant="primary"
-              size="small"
-              onClick={() => window.open(project.liveLink, '_blank')}
-              ariaLabel={`View live demo of ${project.title}`}
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.6rem 1.2rem',
+                backgroundColor: 'var(--color-accent)',
+                color: 'var(--color-text-inverse)',
+                textDecoration: 'none',
+                borderRadius: '8px',
+                fontWeight: '600',
+                fontSize: '0.9rem',
+                transition: 'all 0.3s ease',
+                border: '2px solid var(--color-accent)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = 'var(--color-accent)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--color-accent)';
+                e.currentTarget.style.color = 'var(--color-text-inverse)';
+              }}
+              aria-label={`View live demo of ${project.title}`}
             >
+              <ExternalLink size={18} />
               Live Demo
-            </Button>
+            </a>
           )}
         </div>
       </div>

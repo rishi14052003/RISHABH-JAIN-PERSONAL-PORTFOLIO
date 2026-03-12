@@ -12,13 +12,58 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      id: 'geosync',
+      title: 'GeoSync — Real-time Map Synchronization',
+      description: 'Built a cutting-edge full-stack application enabling instant real-time map synchronization across multiple users with role-based access control. Tracker users broadcast map changes to multiple Tracked users with optimized performance. Features professional HUD interface, mobile-responsive design, Google Maps integration, and Socket.io powered real-time communication delivering seamless collaborative mapping and location sharing experiences.',
+      techStack: ['React', 'Node.js', 'Express.js', 'Socket.io', 'Google Maps API', 'Tailwind CSS', 'Vite'],
+      githubLink: 'https://github.com/rishi14052003/REAL-TIME-GEO-SYNC',
+      category: 'fullstack' as const,
+      featured: true,
+      metrics: [
+        { value: '10/sec', label: 'Update Rate' },
+        { value: 'Multi-user', label: 'Real-time Sync' },
+        { value: 'Responsive', label: 'Mobile Ready' },
+      ],
+    },
+    {
+      id: 'movie-booking',
+      title: 'Movie Ticket Booking Website',
+      description: 'Engineered a full-stack booking platform managing 50+ movie listings and 100+ user accounts. Implemented high-performance RESTful APIs that improved query response times by 30% and delivered a responsive UI that enhanced user interaction speed by 25%, significantly increasing session duration and customer engagement.',
+      techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Full-Stack'],
+      githubLink: 'https://github.com/rishi14052003/ShowTimeBooker',
+      category: 'fullstack' as const,
+      featured: true,
+      metrics: [
+        { value: '50+', label: 'Movie Listings' },
+        { value: '30%', label: 'Faster Responses' },
+        { value: '25%', label: 'Better UX' },
+      ],
+    },
+    {
       id: 'ai-image-generator',
-      title: 'AI Image Generator',
-      description: 'Advanced AI-powered image generation system using Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs). Built with TensorFlow and PyTorch for creating high-quality synthetic images.',
-      techStack: ['Python', 'TensorFlow', 'PyTorch', 'GANs', 'VAEs', 'Machine Learning'],
+      title: 'AI Image Generator using GANs',
+      description: 'Built a cutting-edge generative AI model capable of creating 1,000+ unique synthetic images from random seeds and text prompts. Leveraged advanced deep learning techniques to reduce design workload by 80%, enabling lightning-fast image prototyping for creative applications in gaming and digital media.',
+      techStack: ['Python', 'TensorFlow', 'PyTorch', 'GANs', 'VAEs', 'Machine Learning', 'Deep Learning'],
       githubLink: 'https://github.com/rishi14052003/Ai-Image-Generator',
       category: 'ai' as const,
       featured: true,
+      metrics: [
+        { value: '1000+', label: 'Unique Images' },
+        { value: '80%', label: 'Workload Reduction' },
+      ],
+    },
+    {
+      id: 'sentiment-analysis',
+      title: 'Sentiment Analysis using NLP',
+      description: 'Designed and trained a sophisticated Naive Bayes classifier on 10,000+ labeled reviews, achieving impressive 83.2% accuracy. Optimized preprocessing pipeline including tokenization, vectorization, and feature scaling to boost accuracy by 7%. Deployed a real-time text classifier processing 100+ live inputs per second for practical customer feedback analysis.',
+      techStack: ['Python', 'NLP', 'Naive Bayes', 'Scikit-Learn', 'NLTK', 'Machine Learning'],
+      category: 'ml' as const,
+      featured: true,
+      metrics: [
+        { value: '83.2%', label: 'Accuracy Rate' },
+        { value: '10000+', label: 'Reviews Trained' },
+        { value: '100+', label: 'Inputs/Sec' },
+      ],
     },
   ];
 

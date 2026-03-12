@@ -25,7 +25,6 @@ export const Footer: React.FC<FooterProps> = ({
       label: 'Email Contact',
     },
   ],
-  currentYear = new Date().getFullYear(),
 }) => {
   const navigationItems = [
     { name: 'Home', path: '/' },
@@ -33,6 +32,7 @@ export const Footer: React.FC<FooterProps> = ({
     { name: 'Experience', path: '/experience' },
     { name: 'Projects', path: '/projects' },
     { name: 'Publications', path: '/publications' },
+    { name: 'Certifications', path: '/certifications' },
   ];
 
   const SocialIcon = ({ platform }: { platform: SocialLink['platform'] }) => {
@@ -114,16 +114,10 @@ export const Footer: React.FC<FooterProps> = ({
                 siddh2606@gmail.com
               </a>
             </div>
-            <div className="footer__copyright">
-              <p>&copy; {currentYear} Rishabh Jain</p>
-              <p className="footer__built-with">
-                Built with React + TypeScript ❤️
-              </p>
-            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
   );
 };
 

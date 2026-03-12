@@ -18,13 +18,13 @@ const Experience: React.FC = () => {
       location: 'Surat, Gujarat',
       duration: 'Sept 2025 – Present',
       description: 'Developing full-stack web applications using the MERN Stack. Led development of multiple projects including an Online Restaurant Booking System with real-time reservations, an Expense Calculator with analytics, a feature-rich E-commerce Website with payment integration, and a professional networking platform (Workaholic) similar to LinkedIn. Collaborated with cross-functional teams to design scalable architectures and implemented responsive user interfaces using React and Redux.',
-      techStack: ['React', 'Redux', 'Node.js', 'Express.js', 'MySQL', 'Full-Stack Development'],
+      techStack: ['React', 'Redux', 'Node.js', 'Express.js', 'MySQL', 'CSS3 Animations', 'Full-Stack Development'],
       highlights: [
-        'Built responsive UI components using React',
+        'Built responsive UI components using React with smooth animations',
         'Developed RESTful APIs with Express.js and Node.js',
         'Designed relational databases with MySQL',
         'Implemented real-time features and notifications',
-        'Optimized application performance and user experience'
+        'Optimized application performance and user experience with CSS animations'
       ]
     }
   ];

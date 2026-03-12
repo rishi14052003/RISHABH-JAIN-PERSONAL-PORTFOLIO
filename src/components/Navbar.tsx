@@ -27,6 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { name: 'Experience', path: '/experience', label: 'Go to Experience page' },
     { name: 'Projects', path: '/projects', label: 'Go to Projects page' },
     { name: 'Publications', path: '/publications', label: 'Go to Publications page' },
+    { name: 'Certifications', path: '/certifications', label: 'Go to Certifications page' },
   ];
 
   const isActiveLink = (path: string) => {

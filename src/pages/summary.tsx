@@ -10,7 +10,11 @@ import {
   Database, 
   Flame as Fire,
   Code as Code2,  
-  Bot as N8nIcon
+  Bot as N8nIcon,
+  Zap,
+  Package,
+  Cloud,
+  Brain
 } from 'lucide-react';
 import '../styles/Summary.css';
 
@@ -40,10 +44,14 @@ const Summary: React.FC = () => {
   const featuredSkills = [
     { name: 'React.js', icon: <ReactIcon size={32} /> },
     { name: 'Node.js', icon: <NodejsIcon size={32} /> },
-    { name: 'Python', icon: <Code2 size={32} /> },
+    { name: 'Express.js', icon: <Zap size={32} /> },
     { name: 'MongoDB', icon: <Database size={32} /> },
-    { name: 'n8n', icon: <Fire size={32} /> },
-    { name: 'AWS', icon: <N8nIcon size={32} /> },
+    { name: 'TypeScript', icon: <Code2 size={32} /> },
+    { name: 'Python', icon: <Code2 size={32} /> },
+    { name: 'AWS', icon: <Cloud size={32} /> },
+    { name: 'Docker', icon: <Package size={32} /> },
+    { name: 'MySQL', icon: <Database size={32} /> },
+    { name: 'TensorFlow', icon: <Brain size={32} /> },
   ];
 
   return (
@@ -64,7 +72,7 @@ const Summary: React.FC = () => {
           </div>
 
           <p className="summary__hero-description">
-            Results-driven Full Stack Developer and Automation Specialist with expertise in React.js, Node.js, and Python, delivering scalable web applications and AI-powered solutions. Proven track record in building financial tools, including automated trading bots and high-efficiency workflow pipelines using n8n and Airtable.
+            Full Stack Developer with proven expertise in building scalable web applications using the MERN stack. AWS Certified Cloud Practitioner with hands-on experience in real-time systems, RESTful APIs, and cloud infrastructure. Passionate about leveraging cutting-edge technologies to deliver high-performance solutions that enhance user experience and operational efficiency.
           </p>
 
           <div className="summary__hero-actions">
@@ -131,25 +139,7 @@ const Summary: React.FC = () => {
         </div>
       </section>
 
-      <section className="summary__cta">
-        <div className="container">
-          <div className="summary__cta-content">
-            <h2 className="summary__cta-title">Let's build something together</h2>
-            <p className="summary__cta-description">
-              I'm always interested in hearing about new projects and opportunities.
-              Whether you have a question or just want to say hi, feel free to reach out!
-            </p>
-            <div className="summary__cta-actions">
-              <a
-                href="mailto:siddh2606@gmail.com"
-                className="summary__cta-email"
-              >
-                siddh2606@gmail.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </main>
   );
 };

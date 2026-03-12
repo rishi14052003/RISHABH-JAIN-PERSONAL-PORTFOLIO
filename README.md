@@ -63,15 +63,30 @@ src/
 - Download resume functionality
 
 ### **Skills**
-- Comprehensive technical skills display
-- Categorized by domain (Frontend, Backend, ML, etc.)
-- Interactive skill cards with project usage
-- Modern icon representations
+- Comprehensive technical skills display (40+ skills)
+- Categorized by domain: Frontend, Backend, Databases, Automation & Low-Code, Machine Learning, NLP, Cloud, DevOps, and Core CS
+- Interactive skill cards with project usage examples
+- Professional icon representations using Lucide React
+- **Latest additions**: Golang, REST APIs, Webflow, Compiler Design
+
+### **Experience**
+- Professional work history and role details
+- Current position: MERN Stack Developer at iGeekTech (Sept 2025 – Present)
+- Project highlights and key contributions
+- Technology stack showcase
+- Responsive timeline layout
 
 ### **Projects**
 - Featured project showcases
 - Project cards with tech stack details
 - GitHub and live demo links
+- AI/ML project highlights
+
+### **Publications**
+- Peer-reviewed research and publications
+- LIPNET: Deep Learning for Visual Speech Recognition
+- Links to publication and source code
+- Technology stack details
 
 ### **Contact**
 - Professional contact form
@@ -117,9 +132,11 @@ src/
 ## 🎨 Design System
 
 ### Color Scheme
+- **Light Mode**: Clean whites and grays with vibrant primary colors
+- **Dark Mode**: Dark theme with excellent contrast
 - **Primary**: Modern blue gradient
-- **Secondary**: Dark theme with contrast
-- **Accent**: Professional highlights
+- **Accent**: Professional highlights and call-to-action
+- **Fully Responsive**: Automatic theme switching based on system preferences
 
 ### Typography
 - Clean, readable font stack
@@ -129,10 +146,52 @@ src/
 ### Components
 - **SkillCard**: Displays individual skills with icons and projects
 - **ProjectCard**: Showcases project details and links
+- **PublicationCard**: Professional publication display with links
 - **SectionHeader**: Consistent section headings
 - **ContactForm**: Professional contact interface
+- **TimelineItem**: Experience and timeline visualization (with light/dark mode support)
+
+### Theme Support
+- ✅ **Light Mode** - All icons, text, and borders clearly visible
+- ✅ **Dark Mode** - Original dark theme fully supported
+- ✅ **Automatic Theme Detection** - System preference detection
+- ✅ **CSS Variables** - Dynamic color theming with proper fallbacks
+- ✅ **Lucide React Icons** - Adaptive icon coloring for both themes
 
 ## 🔧 Configuration
+
+### Recent Updates (March 2026)
+
+#### Experience Page
+- ✨ Added professional work history section
+- 🎯 MERN Stack Developer role at iGeekTech with full project details
+- 📝 Detailed descriptions with key highlights and tech stack
+- 🎨 Professional timeline layout with icons and hover effects
+
+#### Skills Enhancement
+- 📚 Expanded skill categories to 8 major domains
+- 🆕 Added: Golang, REST APIs, Webflow, Compiler Design
+- 🎯 Total skills: 40+ with project usage examples
+- 🔗 Fixed lucide-react icon imports (Cpu → Golang, ArrowRightLeft → REST APIs, Settings → Compiler Design)
+
+#### Publications Page
+- 📰 Created dedicated publications section
+- 🔬 Added LIPNET: Deep Learning for Visual Speech Recognition
+- 🔗 Links to publication and GitHub repository
+- 📊 Professional presentation with tech stack showcase
+
+#### Light Mode Support
+- 🌞 Full light mode compatibility across all pages
+- ✅ Fixed CSS variables for proper theme switching
+- 📱 All icons, text, and borders visible in both modes
+- 🎨 Updated Experience and Publications pages with theme-aware colors
+- 🔧 Fixed SkillCard icon colors to work with both themes
+
+#### Bug Fixes
+- 🐛 Fixed invalid lucide-react icon names (Gopher, GitNetwork)
+- 🧹 Removed unused imports (TimelineItem, currentHash)
+- ✅ Replaced undefined CSS variables with standard theme colors
+- 🔨 Build successful with no TypeScript or ESLint errors
 
 ### ESLint Configuration
 The project uses ESLint with TypeScript support and React-specific rules:
