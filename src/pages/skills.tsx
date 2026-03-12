@@ -32,6 +32,10 @@ import {
   Network as NetworkingIcon,
   HardDrive as DBMSIcon,
   Database as MySQLIcon,
+  Zap as WebflowIcon,
+  Cpu as GolangIcon,
+  ArrowRightLeft as RestAPIIcon,
+  Settings as CompilerIcon,
 } from 'lucide-react';
 import '../styles/Skills.css';
 
@@ -86,6 +90,20 @@ const Skills: React.FC = () => {
       proficiency: 0,
       icon: <NodejsIcon size={16} />,
       projectsUsed: ['API Development', 'Server-side Logic', 'Middleware'],
+    },
+    {
+      name: 'Golang',
+      category: 'Backend Development',
+      proficiency: 0,
+      icon: <GolangIcon size={16} />,
+      projectsUsed: ['Scalable Applications', 'Concurrent Systems', 'Backend Services'],
+    },
+    {
+      name: 'REST APIs',
+      category: 'Backend Development',
+      proficiency: 0,
+      icon: <RestAPIIcon size={16} />,
+      projectsUsed: ['API Design', 'Data Integration', 'Service Communication'],
     },
 
     // Programming Languages
@@ -155,6 +173,13 @@ const Skills: React.FC = () => {
       proficiency: 0,
       icon: <WixIcon size={16} />,
       projectsUsed: ['Website Development', 'E-commerce Solutions', 'Client Projects'],
+    },
+    {
+      name: 'Webflow',
+      category: 'Automation & Low-Code',
+      proficiency: 0,
+      icon: <WebflowIcon size={16} />,
+      projectsUsed: ['Website Design', 'Responsive Development', 'Interactive Sites'],
     },
 
     // Machine Learning
@@ -247,6 +272,13 @@ const Skills: React.FC = () => {
       proficiency: 0,
       icon: <DBMSIcon size={16} />,
       projectsUsed: ['Database Design', 'Query Optimization', 'Transaction Management'],
+    },
+    {
+      name: 'Compiler Design',
+      category: 'Core Computer Science',
+      proficiency: 0,
+      icon: <CompilerIcon size={16} />,
+      projectsUsed: ['Language Processing', 'Code Compilation', 'Syntax Analysis'],
     },
 
     // DevOps & Deployment

@@ -13,7 +13,7 @@
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  color: var(--color-white);
+  color: #ffffff;
   padding: var(--space-8) 0;
 }
 
@@ -30,7 +30,7 @@
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-6);
-  color: var(--color-white);
+  color: #ffffff;
   line-height: 1.2;
 }
 
@@ -42,7 +42,7 @@
 .summary__hero-role {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--space-8);
-  color: var(--color-white);
+  color: #ffffff;
   line-height: 1.4;
 }
 
@@ -70,7 +70,7 @@
   max-width: 600px;
   margin: 0 auto var(--space-10);
   line-height: 1.7;
-  color: var(--color-white);
+  color: #ffffff;
   opacity: 0.9;
 }
 

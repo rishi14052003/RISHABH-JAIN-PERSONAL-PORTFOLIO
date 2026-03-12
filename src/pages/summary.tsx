@@ -9,7 +9,7 @@ import {
   Server as NodejsIcon, 
   Database, 
   Flame as Fire,
-  Code as Code2,
+  Code as Code2,  
   Bot as N8nIcon
 } from 'lucide-react';
 import '../styles/Summary.css';

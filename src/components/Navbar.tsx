@@ -20,7 +20,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isScrolled, setIsScrolled] = useState(false);
 
   const currentRoute = currentPath || location.pathname;
-  const currentHash = location.hash;
 
   const navigationItems = [
     { name: 'Home', path: '/', label: 'Navigate to home section' },
