@@ -59,11 +59,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   // Handle resume download
   const handleResumeDownload = () => {
-    // Create a placeholder resume download
-    const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Replace with actual resume path
-    link.download = 'Rishabh_Jain_Resume.pdf';
-    link.click();
+    // Google Drive file ID from the sharing link
+    const fileId = '1I1Ri3_W2VZd51sIqgR_nmznMhGMTlFD0';
+    // Use Google Drive's export/download endpoint for direct download
+    const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+    
+    // Open in new tab/window for download
+    window.open(downloadUrl, '_blank');
   };
 
   // Theme icon
