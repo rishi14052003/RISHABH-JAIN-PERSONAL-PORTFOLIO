@@ -70,7 +70,7 @@ const Summary: React.FC = () => {
           </div>
 
           <p className="summary__hero-description">
-            Full Stack Developer with proven expertise in building scalable web applications using the MERN stack. AWS Certified Cloud Practitioner with hands-on experience in real-time systems, RESTful APIs, and cloud infrastructure. Passionate about leveraging cutting-edge technologies to deliver high-performance solutions that enhance user experience and operational efficiency.
+            Results-driven Full Stack Developer and Automation Specialist with expertise in React.js, Node.js, Go (Golang), and Python. Skilled in building high-performance backend services with Golang, no-code websites using Webflow, and end-to-end automation pipelines with n8n. Proven track record in financial tools, automated trading bots, and high-efficiency integrations. AWS Certified with experience across the full development lifecycle — from cloud deployment to ML-powered features.
           </p>
 
           <div className="summary__hero-actions">

@@ -36,6 +36,10 @@ import {
   Cpu as GolangIcon,
   ArrowRightLeft as RestAPIIcon,
   Settings as CompilerIcon,
+  Zap as MakeIcon,
+  GitBranch as CICDIcon,
+  Shield as SecurityIcon,
+  TreePine as AlgorithmsIcon,
 } from 'lucide-react';
 import '../styles/Skills.css';
 
@@ -181,6 +185,13 @@ const Skills: React.FC = () => {
       icon: <WebflowIcon size={16} />,
       projectsUsed: ['Website Design', 'Responsive Development', 'Interactive Sites'],
     },
+    {
+      name: 'Make.com',
+      category: 'Automation & Low-Code',
+      proficiency: 0,
+      icon: <MakeIcon size={16} />,
+      projectsUsed: ['Scenario Automation', 'Data Transformation', 'Scheduled Workflows'],
+    },
 
     // Machine Learning
     {
@@ -280,6 +291,20 @@ const Skills: React.FC = () => {
       icon: <CompilerIcon size={16} />,
       projectsUsed: ['Language Processing', 'Code Compilation', 'Syntax Analysis'],
     },
+    {
+      name: 'Information Security',
+      category: 'Core Computer Science',
+      proficiency: 0,
+      icon: <SecurityIcon size={16} />,
+      projectsUsed: ['Cryptography', 'Network Security', 'Data Protection'],
+    },
+    {
+      name: 'Design & Analysis of Algorithms',
+      category: 'Core Computer Science',
+      proficiency: 0,
+      icon: <AlgorithmsIcon size={16} />,
+      projectsUsed: ['Algorithm Design', 'Complexity Analysis', 'Optimization'],
+    },
 
     // DevOps & Deployment
     {
@@ -295,6 +320,13 @@ const Skills: React.FC = () => {
       proficiency: 0,
       icon: <GithubIcon size={16} />,
       projectsUsed: ['Repository Management', 'CI/CD', 'Open Source'],
+    },
+    {
+      name: 'CI/CD',
+      category: 'DevOps & Deployment',
+      proficiency: 0,
+      icon: <CICDIcon size={16} />,
+      projectsUsed: ['Continuous Integration', 'Continuous Deployment', 'Automated Testing'],
     },
     {
       name: 'Vercel',

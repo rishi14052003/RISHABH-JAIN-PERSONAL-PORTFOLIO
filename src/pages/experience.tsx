@@ -17,7 +17,7 @@ const Experience: React.FC = () => {
       company: 'iGeekTech',
       location: 'Surat, Gujarat',
       duration: 'Sept 2025 – Present',
-      description: 'Developing full-stack web applications using the MERN Stack. Led development of multiple projects including an Online Restaurant Booking System with real-time reservations, an Expense Calculator with analytics, a feature-rich E-commerce Website with payment integration, and a professional networking platform (Workaholic) similar to LinkedIn. Collaborated with cross-functional teams to design scalable architectures and implemented responsive user interfaces using React and Redux.',
+      description: `Built an Online Restaurant Booking System with real-time table availability, reservation management, and an admin dashboard using React, Node.js, Express.js, and MySQL.\nDeveloped a responsive Frontend for a Trading App featuring live price charts, portfolio dashboard, order placement panel, and trade history UI using React.js.\nDesigned and deployed an n8n automation flow for lead generation — scraping website data, emails, phone numbers, and CEO/founder details from target companies, routing results via webhook integrations.`,
       techStack: ['React', 'Redux', 'Node.js', 'Express.js', 'MySQL', 'CSS3 Animations', 'Full-Stack Development'],
       highlights: [
         'Built responsive UI components using React with smooth animations',
