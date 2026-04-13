@@ -8,16 +8,24 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--color-bg-primary);
+  background-color: rgba(255, 255, 255, 0.98);
   border-bottom: 1px solid var(--color-border);
   transition: all var(--transition-normal);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
+:root[data-theme="dark"] .navbar {
+  background-color: rgba(15, 23, 42, 0.98);
+}
+
 .navbar--scrolled {
-  background-color: rgba(var(--color-bg-primary), 0.95);
+  background-color: rgba(255, 255, 255, 0.99);
   box-shadow: var(--shadow-md);
+}
+
+:root[data-theme="dark"] .navbar--scrolled {
+  background-color: rgba(15, 23, 42, 0.99);
 }
 
 .navbar__content {

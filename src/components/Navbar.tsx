@@ -25,6 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { name: 'Home', path: '/', label: 'Navigate to home section' },
     { name: 'Skills', path: '/skills', label: 'Go to Skills page' },
     { name: 'Experience', path: '/experience', label: 'Go to Experience page' },
+    { name: 'Education', path: '/education', label: 'Go to Education page' },
     { name: 'Projects', path: '/projects', label: 'Go to Projects page' },
     { name: 'Publications', path: '/publications', label: 'Go to Publications page' },
     { name: 'Certifications', path: '/certifications', label: 'Go to Certifications page' },

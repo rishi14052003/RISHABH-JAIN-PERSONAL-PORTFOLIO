@@ -6,6 +6,7 @@ import ScrollToHash from './components/ScrollToHash';
 import Home from './pages/home';
 import Skills from './pages/skills';
 import Experience from './pages/experience';
+import Education from './pages/education';
 import Projects from './pages/projects';
 import Publications from './pages/publications';
 import Certifications from './pages/certifications';
@@ -29,6 +30,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/education" element={<Education />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/certifications" element={<Certifications />} />

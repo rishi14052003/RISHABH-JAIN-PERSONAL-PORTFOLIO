@@ -1,27 +1,27 @@
 /* CSS Variables - Color Palette */
 :root[data-theme="light"] {
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-accent: #f59e0b;
-  --color-accent-hover: #d97706;
+  --color-primary: #1e40af;
+  --color-primary-hover: #1e3a8a;
+  --color-accent: #ea580c;
+  --color-accent-hover: #c2410c;
   
   --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8fafc;
-  --color-bg-tertiary: #f1f5f9;
+  --color-bg-secondary: #f0f4f8;
+  --color-bg-tertiary: #e8ecf1;
   
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #475569;
-  --color-text-tertiary: #64748b;
+  --color-text-primary: #0c0f1a;
+  --color-text-secondary: #3d445c;
+  --color-text-tertiary: #5a6373;
   --color-text-inverse: #ffffff;
   
-  --color-border: #e2e8f0;
-  --color-border-hover: #cbd5e1;
-  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-border: #cbd5e1;
+  --color-border-hover: #94a3b8;
+  --color-shadow: rgba(0, 0, 0, 0.12);
   
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
-  --color-info: #3b82f6;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #0284c7;
 }
 
 :root[data-theme="dark"] {
@@ -214,7 +214,7 @@ body {
 
 /* Anchor scroll offset for fixed navbar */
 .scroll-section {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 80px;
 }
 
 @media (min-width: 641px) {
