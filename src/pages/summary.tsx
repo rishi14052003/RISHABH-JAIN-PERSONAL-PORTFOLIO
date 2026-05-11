@@ -4,11 +4,11 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { useTypewriter } from '../hooks/useTypewriter';
 import Button from '../components/Button';
 import SectionHeader from '../components/SectionHeader';
-import { 
-  Code2 as ReactIcon, 
-  Server as NodejsIcon, 
-  Database, 
-  Code as Code2,  
+import {
+  Code2 as ReactIcon,
+  Server as NodejsIcon,
+  Database,
+  Code as Code2,
   Zap,
   Package,
   Cloud,
@@ -70,8 +70,12 @@ const Summary: React.FC = () => {
           </div>
 
           <p className="summary__hero-description">
-            Results-driven Full Stack Developer and Automation Specialist with expertise in React.js, Node.js, Go (Golang), and Python. Skilled in building high-performance backend services with Golang, no-code websites using Webflow, and end-to-end automation pipelines with n8n. Proven track record in financial tools, automated trading bots, and high-efficiency integrations. AWS Certified with experience across the full development lifecycle — from cloud deployment to ML-powered features.
-          </p>
+            Full Stack Developer and Automation Engineer with 1+ year of professional experience building scalable
+            web applications, intelligent automation pipelines, and ML-powered systems. Proficient in React.js,
+            Node.js, Go (Golang), and TypeScript, with hands-on expertise in n8n and Webflow. AWS Certified, with a
+            track record of delivering production-grade solutions — from real-time trading dashboards to B2B lead
+            intelligence platforms
+            </p>
 
           <div className="summary__hero-actions">
             <Button

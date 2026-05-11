@@ -2,9 +2,9 @@ import React from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import SkillCard from '../components/SkillCard';
 import SectionHeader from '../components/SectionHeader';
-import { 
-  Code2 as ReactIcon, 
-  Hexagon as NodejsIcon, 
+import {
+  Code2 as ReactIcon,
+  Hexagon as NodejsIcon,
   Leaf as MongoIcon,
   Cloud as AWSIcon,
   Workflow as N8nIcon,
