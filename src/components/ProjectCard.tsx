@@ -14,6 +14,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   lazy = true,
 }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [showAllTech, setShowAllTech] = useState(false);
   const { ref, isVisible } = useScrollAnimation<HTMLDivElement>({
     threshold: 0.1,
     triggerOnce: true,
@@ -79,15 +80,41 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         {/* Tech Stack */}
         {project.techStack && project.techStack.length > 0 && (
           <div className="project-card__tech-stack">
-            {project.techStack.slice(0, 4).map((tech, index) => (
-              <span key={index} className="project-card__tech-badge">
-                {tech}
-              </span>
-            ))}
-            {project.techStack.length > 4 && (
-              <span className="project-card__tech-badge project-card__tech-badge--more">
-                +{project.techStack.length - 4}
-              </span>
+            {showAllTech 
+              ? project.techStack.map((tech, index) => (
+                  <span key={index} className="project-card__tech-badge">
+                    {tech}
+                  </span>
+                ))
+              : (
+                <>
+                  {project.techStack.slice(0, 4).map((tech, index) => (
+                    <span key={index} className="project-card__tech-badge">
+                      {tech}
+                    </span>
+                  ))}
+                  {project.techStack.length > 4 && (
+                    <button
+                      onClick={() => setShowAllTech(true)}
+                      className="project-card__tech-badge project-card__tech-badge--more"
+                      title={`View all ${project.techStack.length} technologies`}
+                      aria-label={`Show ${project.techStack.length - 4} more technologies`}
+                    >
+                      +{project.techStack.length - 4}
+                    </button>
+                  )}
+                </>
+              )
+            }
+            {showAllTech && project.techStack.length > 4 && (
+              <button
+                onClick={() => setShowAllTech(false)}
+                className="project-card__tech-badge project-card__tech-badge--less"
+                title="Show less technologies"
+                aria-label="Show less technologies"
+              >
+                Show less
+              </button>
             )}
           </div>
         )}
