@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   // Handle resume download
   const handleResumeDownload = () => {
     // Google Drive file ID from the sharing link
-    const fileId = '1I1Ri3_W2VZd51sIqgR_nmznMhGMTlFD0';
+    const fileId = '1w5DGXOQoqhKjoqs0ksaWFY00K-7qwxJp';
     // Use Google Drive's export/download endpoint for direct download
     const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
     
