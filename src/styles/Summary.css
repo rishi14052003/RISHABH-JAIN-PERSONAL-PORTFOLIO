@@ -12,8 +12,8 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, #124e66 0%, #212a31 100%);
+  color: #d3d9d4;
   padding: var(--space-8) 0;
 }
 
@@ -30,19 +30,19 @@
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-6);
-  color: #ffffff;
+  color: #d3d9d4;
   line-height: 1.2;
 }
 
 .summary__hero-name {
-  color: #ffffff;
+  color: #d3d9d4;
   font-weight: var(--font-weight-bold);
 }
 
 .summary__hero-role {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--space-8);
-  color: #ffffff;
+  color: #d3d9d4;
   line-height: 1.4;
 }
 
@@ -53,6 +53,11 @@
 .summary__role-typewriter {
   color: var(--color-accent);
   font-weight: var(--font-weight-semibold);
+}
+
+.summary__hero .summary__role-typewriter,
+.summary__hero .summary__role-cursor {
+  color: #d3d9d4;
 }
 
 .summary__role-cursor {
@@ -70,7 +75,7 @@
   max-width: 600px;
   margin: 0 auto var(--space-10);
   line-height: 1.7;
-  color: #ffffff;
+  color: #d3d9d4;
   opacity: 0.9;
 }
 
@@ -151,7 +156,7 @@
 /* Stats Section */
 .summary__stats {
   padding: var(--space-16) 0;
-  background: var(--color-background);
+  background: var(--color-bg-primary);
 }
 
 .summary__stats-grid {
@@ -166,7 +171,7 @@
   text-align: center;
   padding: var(--space-6);
   border-radius: var(--border-radius-lg);
-  background: var(--color-surface);
+  background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   transition: all var(--transition-normal);
 }
@@ -210,7 +215,7 @@
   align-items: center;
   padding: var(--space-6);
   border-radius: var(--border-radius-md);
-  background: var(--color-surface);
+  background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   transition: all var(--transition-normal);
   opacity: 0;
@@ -248,7 +253,7 @@
 /* CTA Section */
 .summary__cta {
   padding: var(--space-20) 0;
-  background: var(--color-background);
+  background: var(--color-bg-primary);
 }
 
 .summary__cta-content {

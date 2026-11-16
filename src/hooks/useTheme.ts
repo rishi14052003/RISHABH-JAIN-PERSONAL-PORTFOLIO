@@ -38,7 +38,7 @@ export const useTheme = (): ThemeContextType => {
       if (metaThemeColor) {
         metaThemeColor.setAttribute(
           'content',
-          newTheme === 'dark' ? '#0f172a' : '#ffffff'
+          newTheme === 'dark' ? '#212a31' : '#ffffff'
         );
       }
     }
